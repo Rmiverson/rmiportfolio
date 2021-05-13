@@ -1,15 +1,17 @@
+import React from 'react';
+import { Switch } from 'react-router';
 import './scss/App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Test
-        </p>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render () {
+    return (
+      <div className="App">
+        <Switch>
+        
+        </Switch>
+      </div>
+    )
+  }
 }
 
 export default App;
