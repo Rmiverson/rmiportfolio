@@ -1,6 +1,9 @@
 import React from 'react'
 import InfoBox from '../components/InfoBox'
 
+const whoSummary = "Short Summary: where I'm from, interest & hobbies"
+const whatSummary = "some thing about dev stuff"
+
 const Home = () => {
    return (
       <div className="home-page">
@@ -10,8 +13,8 @@ const Home = () => {
          </div>
          
          <div className="summary-container">
-            <InfoBox header="Who am I?" para="Short Summary: where I'm from, interest & hobbies"/>
-            <InfoBox header="What I do" para="some thing about dev stuff"/>
+            <InfoBox header="Who am I?" para={whoSummary}/>
+            <InfoBox header="What I do" para={whatSummary}/>
          </div>
       </div>
    )
