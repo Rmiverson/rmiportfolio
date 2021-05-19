@@ -1,8 +1,8 @@
 import React from 'react'
 import InfoBox from '../components/InfoBox'
 
-const whoSummary = "Short Summary: where I'm from, interest & hobbies"
-const whatSummary = "some thing about dev stuff"
+const whoSummary = "I’m based in Washington, in the beautiful Pacific Northwest. I have a passion for video games, with some of my favorites being Pokemon, Stardew Valley, and Animal Crossing. I am also a photographer, taking photos mostly of nature and landscapes. "
+const whatSummary = "I’m a full-stack software engineer and a former web designer. I graduated from college with an associates in web design, and I’m also a recent graduate from a coding bootcamp called Flatiron School specializing in software engineering. I develop products using a React & Redux frontend with a Ruby on Rails API backend"
 
 const Home = () => {
    return (
@@ -13,8 +13,8 @@ const Home = () => {
          </div>
          
          <div className="summary-container">
-            <InfoBox header="Who am I?" para={whoSummary}/>
             <InfoBox header="What I do" para={whatSummary}/>
+            <InfoBox header="Who am I?" para={whoSummary}/>
          </div>
       </div>
    )
