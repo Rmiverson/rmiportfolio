@@ -1,10 +1,14 @@
 import React from 'react'
 
-const Summary = (props) => {
+const Summary = () => {
    return (
       <div className="infobox">
-         <h3>{props.header}</h3>
-         <p>{props.para}</p>
+         <h3>Summary</h3>
+         <p>
+            Full Stack developer with a strong background in Design. Passionate about growth and new
+            technologies, leveraging his experience and skills to efficiently build innovative technology products
+            while enabling learning and collaboration.
+         </p>
       </div>
    )
 }
