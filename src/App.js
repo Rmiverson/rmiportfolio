@@ -9,6 +9,7 @@ import About from './containers/About'
 import More from './containers/More'
 import Projects from './containers/Projects'
 import NavBar from './components/NavBar'
+import ProjectAbout from './components/ProjectAbout'
 
 class App extends React.Component {
   render () {
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about" render={() => <About />} />
           <Route exact path="/projects" render={() => <Projects />} />
+          <Route path='/projects/:projectKey' render={() => <ProjectAbout />} />
           <Route exact path="/more" render={() => <More />} />
 
           <Route component={NotFound} />
