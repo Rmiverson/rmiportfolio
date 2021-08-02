@@ -1,19 +1,14 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
-class NavBar extends React.Component {
-   render() {
-      return (
-         <nav className="nav-bar">
-            <>
-               <NavLink className="nav-link" to="/">Home</NavLink>
-               <NavLink className="nav-link" to="/about">About</NavLink>
-               <NavLink className="nav-link" to="/projects">Projects</NavLink>
-               <NavLink className="nav-link" to="/more">More</NavLink>
-            </>
-         </nav>
-      )
-   }
+const NavBar = () => {
+   return (
+      <nav className="nav-bar">
+         <a href="#header" className="nav-link">Home</a>
+         <a href="#about" className="nav-link">About</a>
+         <a href="#projects" className="nav-link">Projects</a>
+         <a href="#contact" className="nav-link">Contact</a>
+      </nav>
+   )   
 }
 
 export default NavBar

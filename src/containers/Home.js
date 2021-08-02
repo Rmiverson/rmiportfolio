@@ -1,21 +1,49 @@
 import React from 'react'
-import InfoBox from '../components/InfoBox'
+import data from '../db'
 
-const whoSummary = "I’m based in Washington, in the beautiful Pacific Northwest. I have a passion for video games, with some of my favorites being Pokemon, Stardew Valley, and Animal Crossing. I am also a photographer, taking photos mostly of nature and landscapes. "
-const whatSummary = "I’m a full-stack software engineer and a former web designer. I graduated from college with an associates in web design, and I’m also a recent graduate from a coding bootcamp called Flatiron School specializing in software engineering. I develop products using a React & Redux frontend with a Ruby on Rails API backend"
+import InfoBox from '../components/InfoBox'
+import Skills from '../components/Skills'
+import Experience from '../components/Experience'
+import Education from '../components/Education'
+import ProjectSquare from '../components/ProjectSquare'
+import Contact from '../components/Contact'
+import NavBar from '../components/NavBar'
+
 
 const Home = () => {
    return (
       <div className="home-page">
-         <div className="title-name">
+         <div id="header" className="header">
             <h1>Riley</h1>
-            <h1>Iverson</h1>            
-         </div>
+            <h1>Iverson</h1>     
+
+            <NavBar /> 
          
-         <div className="summary-container">
-            <InfoBox header="What I do" para={whatSummary}/>
-            <InfoBox header="Who am I?" para={whoSummary}/>
+            <InfoBox header="What I do" para={data.summary.what}/>
+            <InfoBox header="Who am I?" para={data.summary.who}/>
          </div>
+
+         <div id="about">
+            <Skills />
+            <Experience />
+            <Education />
+         </div>
+
+         <div id="projects">
+            <div className="title">
+               <h2>Projects</h2>
+               <p>Here are some of my current and past projects that I've worked on!</p>            
+            </div>
+            <div className="projects-grid">
+               {data.projects.map((project, index) => {
+                  return(<ProjectSquare key={index} id={index} name={project[0]} desc={project[1]} thumb={project[2]} />)
+               })}
+            </div>
+         </div>
+
+         <div id="contact">
+               <Contact />
+         </div> 
       </div>
    )
 }
