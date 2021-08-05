@@ -9,8 +9,8 @@ import Education from '../components/Education'
 // import ProjectSquare from '../components/ProjectSquare'
 import Contact from '../components/Contact'
 import NavBar from '../components/NavBar'
-import img from '../images/ProfilePicture512.jpg'
-import resume from '../images/Riley_M_Iversons_Resume.pdf'
+import img from '../media/ProfilePicture512.jpg'
+import resume from '../media/Riley_M_Iversons_Resume.pdf'
 
 const Home = () => {
    return (
