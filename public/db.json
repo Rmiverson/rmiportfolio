@@ -1,9 +1,8 @@
 {
-    "aboutMe": {
-        "paragraphs": [
-            "Hey, I`m Riley. I`m a Software Developer and a Designer. I like to build stuff with JavaScript and React.js. I also like to design and make stuff using Photoshop, Figma, Clip Studio, and Procreate. I`ve also done other cool stuff like animation and music production in my past work. Some of the things I do for fun are photography, baking, playing video games, and if the weather is nice hiking.",
-            "I`ve graduated with an Associates degree Web Design, and more recently graduated from a coding bootcamp called Flatiron School with a certificate in Software Engineering. However a lot of what I know now I taught myself, or taught by teachers on Udemy and YouTube. Learning is a daily effort of mine, and is something I look forward to keeping up in my future.",
-            "Currently I`m building a web application that gives people the best solution for storing and organizing their cooking and baking recipes. I also am open to freelance development and design work. I`m always open to new opportunities, so if you`re interested in hiring me or want to know more about me feel free to reach out and we can talk."
-        ]
-    }
+    "resume": "https://drive.google.com/uc?export=download&id=16HViW4Pl074CdAKC4t-NXwJRgX2KqYWq",
+    "aboutMe": [
+        "Hey, I`m Riley. I`m a Software Developer and a Designer. I like to build stuff with JavaScript and React.js. I also like to design and make stuff using Photoshop, Figma, Clip Studio, and Procreate. I`ve also done other cool stuff like animation and music production in my past work. Some of the things I do for fun are photography, baking, playing video games, and if the weather is nice hiking.",
+        "I`ve graduated with an Associates degree Web Design, and more recently graduated from a coding bootcamp called Flatiron School with a certificate in Software Engineering. However a lot of what I know now I taught myself, or taught by teachers on Udemy and YouTube. Learning is a daily effort of mine, and is something I look forward to keeping up in my future.",
+        "Currently I`m building a web application that gives people the best solution for storing and organizing their cooking and baking recipes. I also am open to freelance development and design work. I`m always open to new opportunities, so if you`re interested in hiring me or want to know more about me feel free to reach out and we can talk."
+    ]
 }

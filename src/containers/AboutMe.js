@@ -27,7 +27,7 @@ const AboutMe = () => {
       getData();
   }, []);
 
-  if (!result.status === 200) {
+  if (!result.status) {
     return <div>Loading...</div>
   } else {
     return (
@@ -38,7 +38,7 @@ const AboutMe = () => {
         <Nav />
         <div className="main-body">
           <h2>About Me</h2>
-          {result.data?.aboutMe?.paragraphs.map((value, index) => {
+          {result.data?.aboutMe?.map((value, index) => {
             if (index === 0) {
               return (
                 <div className="about-introduction" key={value}>
@@ -57,7 +57,7 @@ const AboutMe = () => {
 
           <div className="download">
             <h3>Download My Resume</h3>
-            <a href="https://drive.google.com/uc?export=download&id=1qniM-msoSLwbS8h6bAe0q6RUV9LkvPWmuEm3imEjpIc">Download</a>
+            <a href={result.data?.resume}>Download</a>
           </div>
         </div>
       </div>
