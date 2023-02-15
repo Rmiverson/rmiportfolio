@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import SocialBar from "../components/SocialBar";
 import Splash from "../components/Splash";
+import Footer from '../components/Footer';
 
 const AboutMe = () => {
   const [result, setResult] = useState({data: {}, status: null, message: null});
@@ -33,31 +34,59 @@ const AboutMe = () => {
     return (
       <div className="about-me">
         <div className="landing">
-          <Splash />
+          <div className="splash-content">
+            <Splash />
+            <div className="landing-ribbon">
+              <div className="inner-landing-ribbon"></div>
+            </div>
+          </div>
+
+          <div className="mid-ribbon-container">
+            <div className="mid-ribbon-corner-l">
+              <div className="inner-mid-ribbon-corner-l"></div>
+            </div>
+
+            <div className="mid-ribbon">
+              <div className="inner-mid-ribbon"></div>
+            </div>
+
+            <div className="mid-ribbon-corner-r">
+              <div className="inner-mid-ribbon-corner-r"></div>
+            </div>           
+          </div>
         </div>
-        <Nav />
-        <div className="main-body">
-          <h2>About Me</h2>
-          {result.data?.aboutMe?.map((value, index) => {
-            if (index === 0) {
-              return (
-                <div className="about-introduction" key={value}>
-                    <img alt="Riley Iverson" src="media/ProfilePicture192.jpg" />
-                    <p>{value}</p>
-                </div>
-              )
-            } else {
-              return (
-                <p key={value}>{value}</p>
-              )
-            };
-          })}
 
-          <SocialBar />
+        <div className="lower-content">
+          <div className="body-ribbon">
+            <div className="inner-body-ribbon"></div>
+          </div>
 
-          <div className="download">
-            <h3>Download My Resume</h3>
-            <a href={result.data?.resume}>Download</a>
+          <div className="main-body">
+            <Nav />
+            <h2>About Me</h2>
+            {result.data?.aboutMe?.map((value, index) => {
+              if (index === 0) {
+                return (
+                  <div className="about-introduction" key={value}>
+                      <img alt="Riley Iverson" src="media/ProfilePicture192.jpg" />
+                      <p>{value}</p>
+                  </div>
+                )
+              } else {
+                return (
+                  <p key={value}>{value}</p>
+                )
+              };
+            })}
+
+            <SocialBar />
+
+            <div className="download">
+              <h3>Download My Resume</h3>
+              <a href={result.data?.resume}>Download</a>
+            </div>
+
+            <Footer />
           </div>
         </div>
       </div>
