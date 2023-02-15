@@ -1,57 +1,68 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import SocialBar from "../components/SocialBar";
 import Splash from "../components/Splash";
 
-const tempData = {
-   "range": null,
-   "majorDimension": "ROWS",
-   "values": [
-      ["About Me", "Contact", "Design", "Development", "Photography"],
-      ["Test data for about me", "", "", "", ""],
-      ["More test data"],
-      ["another test paragraph"]
-   ]
-}
-
 const AboutMe = () => {
-   return (
+  const [result, setResult] = useState({data: {}, status: null, message: null});
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        await fetch('db.json', {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          }
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          setResult({data: data, status: 200, message: 'OK'})
+        });
+      } catch (error) {
+        setResult({data: {}, status: error, message: error})
+      };
+      };
+
+      getData();
+  }, []);
+
+  if (!result.status === 200) {
+    return <div>Loading...</div>
+  } else {
+    return (
       <div className="about-me">
-         <div className="landing">
-            <Splash />
-         </div>
+        <div className="landing">
+          <Splash />
+        </div>
+        <Nav />
+        <div className="main-body">
+          <h2>About Me</h2>
+          {result.data?.aboutMe?.paragraphs.map((value, index) => {
+            if (index === 0) {
+              return (
+                <div className="about-introduction" key={value}>
+                    <img alt="Riley Iverson" src="media/ProfilePicture192.jpg" />
+                    <p>{value}</p>
+                </div>
+              )
+            } else {
+              return (
+                <p key={value}>{value}</p>
+              )
+            };
+          })}
 
-         <Nav />
-         
-         <div className="main-body">
-            <h2>About Me</h2>
-            {tempData?.values?.map((value, index) => {
-               if (index > 0) {
-                  if (index === 1) {
-                     return (
-                        <div className="about-introduction" key={value[0]}>
-                           <img alt="Riley Iverson" src="../media/ProfilePicture192.jpg" />
-                           <p>{value[0]}</p>
-                        </div>
-                     )
-                  }
-                  return (
-                     <p key={value[0]}>{value[0]}</p>
-                  )
-               } else {
-                  return null
-               }
-            })}
+          <SocialBar />
 
-            <SocialBar />
-
-            <div className="download">
-               <h3>Download My Resume</h3>
-               <a href="https://drive.google.com/uc?export=download&id=1qniM-msoSLwbS8h6bAe0q6RUV9LkvPWmuEm3imEjpIc">Download</a>
-            </div>
-         </div>
+          <div className="download">
+            <h3>Download My Resume</h3>
+            <a href="https://drive.google.com/uc?export=download&id=1qniM-msoSLwbS8h6bAe0q6RUV9LkvPWmuEm3imEjpIc">Download</a>
+          </div>
+        </div>
       </div>
-   );
+    );
+  };
 };
 
 export default AboutMe;
