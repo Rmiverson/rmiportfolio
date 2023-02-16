@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import AboutMe from "./containers/AboutMe"
-import Contact from "./containers/Contact"
-import Design from "./containers/Design"
-import Development from "./containers/Development"
-import Photography from "./containers/Photography"
+import AboutMe from "./containers/AboutMe/AboutMe.js"
+import Contact from "./containers/Contact/Contact.js"
+import Design from "./containers/Design/Design.js"
+import Development from "./containers/Development/Development.js"
+import Photography from "./containers/Photography/Photography.js"
 
 const RouteBoard = () => {
     return (
