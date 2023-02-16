@@ -6,17 +6,15 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2.75rem 0px 1.75rem 0px;
 
   .nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 125px;
-    height: 100%;
+    height: 30px;
     padding: 10px;
-
     color: white;
     background-color: #4d4d4d;
     text-decoration: none;
