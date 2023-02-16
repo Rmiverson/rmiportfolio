@@ -118,7 +118,7 @@ $landing-bg: "../../../public/media/bg2.JPG";
   .lower-content {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 120vh;
 
     .body-ribbon {
       display: flex;
@@ -135,9 +135,14 @@ $landing-bg: "../../../public/media/bg2.JPG";
     .main-body {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       width: 75vw;
-      height: 100%;
       padding-right: 10vw;
+
+      .main-body-content {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 

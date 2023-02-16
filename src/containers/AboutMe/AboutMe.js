@@ -65,35 +65,36 @@ const AboutMe = () => {
           </div>
 
           <div className="main-body">
-            <Nav />
-            
-            {result.data?.aboutMe?.map((value, index) => {
-              if (index === 0) {
-                return (
-                  <div className="about-introduction" key={value}>
-                      <Tilt>
-                        <img alt="Riley Iverson" src="media/ProfilePicture192.jpg" />  
-                      </Tilt>
-                      
-                      <div className="about-introduction-content">
-                        <h2>About Me</h2>
-                        <p>{value}</p>
-                      </div>
-                  </div>
-                )
-              } else {
-                return (
-                  <p key={value}>{value}</p>
-                )
-              };
-            })}
+            <section className="main-body-content">
+              <Nav />
+              {result.data?.aboutMe?.map((value, index) => {
+                if (index === 0) {
+                  return (
+                    <div className="about-introduction" key={value}>
+                        <Tilt>
+                          <img alt="Riley Iverson" src="media/ProfilePicture192.jpg" />  
+                        </Tilt>
 
-            <SocialBar />
+                        <div className="about-introduction-content">
+                          <h2>About Me</h2>
+                          <p>{value}</p>
+                        </div>
+                    </div>
+                  )
+                } else {
+                  return (
+                    <p key={value}>{value}</p>
+                  )
+                };
+              })}
 
-            <div className="download">
-              <h3>Download My Resume</h3>
-              <a href={result.data?.resume}>Download</a>
-            </div>
+              <SocialBar />
+
+              <div className="download">
+                <h3>Download My Resume</h3>
+                <a href={result.data?.resume}>Download</a>
+              </div>              
+            </section>
 
             <Footer />
           </div>
