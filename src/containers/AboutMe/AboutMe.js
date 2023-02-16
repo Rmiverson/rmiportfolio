@@ -3,6 +3,7 @@ import Nav from "../../components/Nav";
 import SocialBar from "../../components/SocialBar";
 import Splash from "../../components/Splash";
 import Footer from '../../components/Footer';
+import Tilt from 'react-parallax-tilt';
 
 import './AboutMe.scss'
 
@@ -65,13 +66,19 @@ const AboutMe = () => {
 
           <div className="main-body">
             <Nav />
-            <h2>About Me</h2>
+            
             {result.data?.aboutMe?.map((value, index) => {
               if (index === 0) {
                 return (
                   <div className="about-introduction" key={value}>
-                      <img alt="Riley Iverson" src="media/ProfilePicture192.jpg" />
-                      <p>{value}</p>
+                      <Tilt>
+                        <img alt="Riley Iverson" src="media/ProfilePicture192.jpg" />  
+                      </Tilt>
+                      
+                      <div className="about-introduction-content">
+                        <h2>About Me</h2>
+                        <p>{value}</p>
+                      </div>
                   </div>
                 )
               } else {
