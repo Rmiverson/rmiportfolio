@@ -4,7 +4,7 @@ const Footer = () => {
     const year = new Date().getFullYear()
 
     return (
-        <footer>
+        <footer className="footer">
             <p>Copyright &copy; Riley Iverson {year}</p>
             <p>All Media including: images, photography, illustrations, and designs are my intellectual property.</p>
             <p>Do not use for commercial or private purposes without my express permission.</p>
