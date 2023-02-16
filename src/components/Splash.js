@@ -7,7 +7,7 @@ const Splash = () => {
         <h1>Riley</h1>
         <h1>Iverson</h1>
         <hr/>
-        <h3>Software Developer</h3>
+        <h3>Developer & Designer</h3>
         <p>As well as other things.</p>
       </div>
     </div>
