@@ -4,6 +4,7 @@ import SocialBar from "../../components/SocialBar";
 import Splash from "../../components/Splash";
 import Footer from '../../components/Footer';
 import Tilt from 'react-parallax-tilt';
+import { BsCloudDownload } from 'react-icons/bs'
 
 import './AboutMe.scss'
 
@@ -92,7 +93,7 @@ const AboutMe = () => {
 
               <div className="download">
                 <h3>Download My Resume</h3>
-                <a href={result.data?.resume}>Download</a>
+                <a href={result.data?.resume}><BsCloudDownload /></a>
               </div>              
             </section>
 
