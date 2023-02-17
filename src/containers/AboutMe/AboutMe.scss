@@ -319,7 +319,8 @@ $landing-bg: "../../../public/media/bg2.JPG";
             width: 100%;
             border-radius: 0px;
             box-shadow: none;
-            border: solid rgba(255, 255, 255, 0.1);
+            border-bottom: solid #7A709D;
+            border-top: solid #7A709D;
       
             &:hover {
               box-shadow: inset 5px 8px 20px 0px rgba(43, 43, 43, 0.7);
