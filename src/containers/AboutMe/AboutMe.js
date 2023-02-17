@@ -65,7 +65,7 @@ const AboutMe = () => {
             <div className="inner-body-ribbon"></div>
           </div>
 
-          <div className="main-body">
+          <div className="main-body min-height">
             <section className="main-body-content">
               <Nav />
               {result.data?.aboutMe?.map((value, index) => {
