@@ -1,83 +1,91 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
+import { BsGithub } from "react-icons/bs"
 
 import './Development.scss'
 
 const Development = () => {
-  return (
-    <div className="development">
-      <div className="mid-ribbon">
-        <div className="inner-mid-ribbon"></div>
-      </div>
-      <Nav />
+  const [result, setResult] = useState({data: {}, status: null, message: null});
 
-      <div className="development-content min-height">
-        <div className="developement-introduction">
-          <h2>Development </h2>    
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  useEffect(() => {
+    async function getData() {
+      try {
+        await fetch('db.json', {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          }
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          setResult({data: data, status: 200, message: 'OK'})
+        });
+      } catch (error) {
+        setResult({data: {}, status: error, message: error})
+      };
+      };
+
+      getData();
+  }, []);
+
+  if (!result.status) {
+    return <div>Loading...</div>
+  } else {
+    return (
+      <div className="development">
+        <div className="mid-ribbon">
+          <div className="inner-mid-ribbon"></div>
         </div>
+        <Nav />
 
-        <div className="skill-list">
-          <h3>Skills</h3>
-          <div className="list-container">
-            <ul>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-            </ul>
-            <ul>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-            </ul>  
-            <ul>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-            </ul>  
-            <ul>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-              <li>Skill</li>
-            </ul>
-          </div>     
-        </div>
+        <div className="development-content min-height">
+          <div className="developement-introduction">
+            <h2>Development</h2>    
+            <p>{result.data.development.about}</p>
+          </div>
 
-        <div className="development-projects">
-          <div className="project">
-            <h2>Project Name</h2>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <div className="skill-list">
+            <h3>Skills</h3>
+            <div className="list-container">
+              <ul>
+                {result.data.development.skills.map((skill, index) => {
+                  return(<li key={skill + index}>{skill}</li>)
+                })}                
+              </ul>
+            </div>     
+          </div>
 
-            <div className="fe-be-sections">
-              <div className="fe">
-                <h3>Frontend</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <a alt="Github" href="https://github.com/Rmiverson">Github</a>
-              </div>
+          <div className="development-projects">
+            {result.data.development.projects.map((project, index) => {
+              return (
+                <div className="project" key={project.name + index}>
+                  <h2>{project.name}</h2>
+                  <p>{project.about}</p>
 
-              <div className="be">
-                <h3>Backend</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <a alt="Github" href="https://github.com/Rmiverson">Github</a>
-              </div>
-            </div>
-            <img alt="" />
+                  <div className="sub-sections">
+                    {project.subSections.map((subSection, index) => {
+                      return (
+                        <div className="sub-section">
+                          <h3>{subSection.name}</h3>
+                          <p>{subSection.about}</p>
+                          <a href={subSection.link}><BsGithub /></a>
+                        </div>
+                      )
+                    })}                  
+                  </div>
+
+                  <img alt="Project Example" src={`/media/${project.media}`}/>
+                </div>
+              )
+            })}
           </div>
         </div>
-      </div>
 
-      <Footer />
-    </div>
-  );
+        <Footer />
+      </div>
+    );
+  };
 };
 
 export default Development;

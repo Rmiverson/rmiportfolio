@@ -33,29 +33,78 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      width: 80%;
       
       .list-container {
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
+        width: 100%;
+        
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          height: 15vh;
+          gap: 1rem;
+        }
       }
     }
   }
 
   .development-projects {
     .project {
-      .fe-be-sections {
+      display: flex;
+      flex-direction: column;
+      margin: 5rem 0px 5rem 0px;
+
+      img {
+        width: 900px;
+        height: auto;
+        border-radius: 50px;
+        margin: 2.5rem auto 0px auto;
+      }
+
+      .sub-sections {
         display: flex;
         flex-direction: row;
 
-        .fe, .be {
+        .sub-section {
+          margin: 0px 15px 0px 15px;
+
           a {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: #4d4d4d;
+            padding: 10px;
+            border-radius: 15px;
             width: 3rem;
             margin-left: auto;
             margin-right: auto;
+      
+            transition: .2s ease-in-out;
+            box-shadow: -6px -6px 14px rgba(43, 43, 43, 0.7),
+                      -6px -6px 10px rgba(43, 43, 43, 0.5),
+                      6px 6px 8px rgba(43, 43, 43, 0.075),
+                      6px 6px 10px rgba(255, 255, 255, 0.15);
+        
+            &:hover {
+              box-shadow: -2px -2px 6px rgba(43, 43, 43, 0.6),
+                          -2px -2px 4px rgba(43, 43, 43, 0.4),
+                          2px 2px 2px rgba(43, 43, 43, 0.05),
+                          2px 2px 4px rgba(255, 255, 255, 0.1);
+            }
+            &:active {
+              box-shadow: inset -2px -2px 6px rgba(43, 43, 43, 0.7),
+                          inset -2px -2px 4px rgba(43, 43, 43, 0.5),
+                          inset 2px 2px 2px rgba(43, 43, 43, 0.075),
+                          inset 2px 2px 4px rgba(255, 255, 255, 0.15);
+            }
+      
+            svg {
+              height: 50px;
+              width: 50px;
+              color: white;
+            }
           }
         }
       }

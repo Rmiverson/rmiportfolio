@@ -1,6 +1,6 @@
 {
-  "short_name": "Rmiportfolio",
-  "name": "Riley M. Iversons Portfolio",
+  "short_name": "RMIportfolio",
+  "name": "Riley Iversons Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#75419D",
+  "background_color": "#474747"
 }
