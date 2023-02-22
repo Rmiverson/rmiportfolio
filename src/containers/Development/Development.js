@@ -40,33 +40,96 @@ const Development = () => {
         <Nav />
 
         <div className="development-content min-height">
-          <div className="developement-introduction">
-            <h2>Development</h2>    
-            <p>{result.data.development.about}</p>
+          <div className="development-introduction">
+            <h1>Software Development</h1>
+            {result.data.development.about.map((paragraph, index) => {
+              return (
+                <p key={paragraph + index}>{paragraph}</p>
+              )
+            })} 
           </div>
 
           <div className="skill-list">
-            <h3>Skills</h3>
-            <div className="list-container">
+            <div className="skills-container">
+              <h3>Skills:</h3>
               <ul>
-                {result.data.development.skills.map((skill, index) => {
-                  return(<li key={skill + index}>{skill}</li>)
+                {result.data.development.skills.skills.map((skill, index) => {
+                  let returnValue = skill
+
+                  if (index + 1 !== result.data.development.skills.skills.length) {
+                    returnValue = `${skill},`
+                  }
+
+                  return (
+                    <li key={skill + index}>{returnValue}</li>
+                  )
                 })}                
               </ul>
-            </div>     
+            </div>
+
+            <div className="languages-container">
+              <h3>Languages:</h3>
+              <ul>
+                {result.data.development.skills.languages.map((language, index) => {
+                  let returnValue = language
+
+                  if (index + 1 !== result.data.development.skills.languages.length) {
+                    returnValue = `${language},`
+                  }
+
+                  return (
+                    <li key={language + index}>{returnValue}</li>
+                  )
+                })}                
+              </ul>
+            </div>
+
+            <div className="tools-container">
+              <h3>Tools:</h3>
+              <ul>
+                {result.data.development.skills.tools.map((tool, index) => {
+                  let returnValue = tool
+
+                  if (index + 1 !== result.data.development.skills.tools.length) {
+                    returnValue = `${tool},`
+                  }
+
+                  return (
+                    <li key={tool + index}>{returnValue}</li>
+                  )
+                })}                
+              </ul>
+            </div>
+          </div>
+
+          <div className="education">
+            <h2>Education</h2>
+            {result.data.development.education.map((item, index) => {
+              return (
+                <div key={item.name + index} className="education-item">
+                  <div className="education-item-header">
+                    <h3>{item.name}</h3>
+                    <p>{`${item.school} || ${item.year}`}</p>
+                  </div>
+
+                  <p>{item.description}</p>
+                </div>
+              )
+            })}
           </div>
 
           <div className="development-projects">
+            <h2>Projects</h2>
             {result.data.development.projects.map((project, index) => {
               return (
                 <div className="project" key={project.name + index}>
-                  <h2>{project.name}</h2>
+                  <h3>{project.name}</h3>
                   <p>{project.about}</p>
 
                   <div className="sub-sections">
                     {project.subSections.map((subSection, index) => {
                       return (
-                        <div className="sub-section">
+                        <div key={subSection.name + index} className="sub-section">
                           <h3>{subSection.name}</h3>
                           <p>{subSection.about}</p>
                           <a href={subSection.link}><BsGithub /></a>
