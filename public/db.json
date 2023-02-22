@@ -1,45 +1,48 @@
 {
     "resume": "https://drive.google.com/uc?export=download&id=16HViW4Pl074CdAKC4t-NXwJRgX2KqYWq",
     "aboutMe": [
-        "Hey, I`m Riley. I`m a Software Developer and a Designer. I like to build stuff with JavaScript and React.js. I also like to design and make stuff using Photoshop, Figma, Clip Studio, and Procreate. I`ve also done other cool stuff like animation and music production in my past work. Some of the things I do for fun are photography, baking, playing video games, and if the weather is nice hiking.",
-        "I`ve graduated with an Associates degree Web Design, and more recently graduated from a coding bootcamp called Flatiron School with a certificate in Software Engineering. However a lot of what I know now I taught myself, or taught by teachers on Udemy and YouTube. Learning is a daily effort of mine, and is something I look forward to keeping up in my future.",
-        "Currently I`m building a web application that gives people the best solution for storing and organizing their cooking and baking recipes. I also am open to freelance development and design work. I`m always open to new opportunities, so if you`re interested in hiring me or want to know more about me feel free to reach out and we can talk."
+        "Hey, I'm Riley. I'm a Software Developer and a Designer. I like to build stuff with JavaScript and React.js. I also like to design and make stuff using Photoshop, Figma, Clip Studio, and Procreate. I've also done other cool stuff like animation and music production in my past work. Some of the things I do for fun are photography, baking, playing video games, and if the weather is nice hiking.",
+        "I've graduated with an Associates degree Web Design, and more recently graduated from a coding bootcamp called Flatiron School with a certificate in Software Engineering. However a lot of what I know now I taught myself, or taught by teachers on Udemy and YouTube. Learning is a daily effort of mine, and is something I look forward to keeping up in my future.",
+        "Currently I'm building a web application that gives people the best solution for storing and organizing their cooking and baking recipes. I also am open to freelance development and design work. I'm always open to new opportunities, so if you're interested in hiring me or want to know more about me feel free to reach out and we can talk."
     ],
     "development": {
-        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "skills": ["Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill", "Skill"],
-        "projects": [
+        "about": [
+            "Most of my software development skills come from my time at a coding bootcamp called Flatiron School. There I was able to collaborate with my peers and build valuable soft skills in communication, teamwork, and problem solving. I've taken extra steps outside of traditional education to expand my technical developer skills as well, in order to make advances in projects and in my career. This adaptability is what makes me stand out as a developer, allowing me to be confident in any situation and project that I’m being put in."            
+        ],
+        "skills": {
+            "skills": ["Front End Development", "Back End Development", "Web Development", "Web Design"],
+            "languages": ["JavaScript", "Ruby", "PostgreSQL", "SASS/SCSS", "HTML", "Python"],
+            "tools": ["React.js", "Redux.js", "Ruby on Rails", "Git", "Bootstrap", "jQuery" ]
+        },
+        "education": [
             {
-                "name": "Project Name",
-                "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "media": "gb1.png",
-                "subSections": [
-                    {
-                        "name": "Frontend",
-                        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        "link": "https://github.com/Rmiverson"
-                    },
-                    {
-                        "name": "Backend",
-                        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        "link": "https://github.com/Rmiverson"
-                    }
-                ]
+                "name": "Certificate: Software Engineering",
+                "school": "Flatiron School",
+                "description": "Full Stack Software Engineering Program. Learned JavaScript, React.js, Ruby, Ruby on Rails, SQL, ORMs, and Active Record.",
+                "year": "2021"
             },
             {
-                "name": "Project Name",
-                "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "name": "AA, Multimeidia & Interactive Technology: Web Design",
+                "school": "Skagit Valley College",
+                "description": "Studied fundamentals in web design and search engine optimisation. Learned essential technologies such as the Adobe Creative Suite, WordPress, jQuery, HTML5, CSS, and Bootstrap.",
+                "year": "2018"
+            }
+        ],
+        "projects": [
+            {
+                "name": "GoodBread",
+                "about": "GoodBread is recipe web application that aims to be the home for your recipes that your friends and family send you, and for the many recipes that fill up your bookmarks bar in your web browser. The goal is to make your recipes easy to organize, find, and share. Currently there are folders and tags to help organize recipes, as well as a dynamic recipe form to help write new recipes.",
                 "media": "gb1.png",
                 "subSections": [
                     {
                         "name": "Frontend",
-                        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        "link": "https://github.com/Rmiverson"
+                        "about": "The front end of this project was built using React.js, and Redux for state management. API requests and data loading are managed by using a unique mix of Axios as well as React-Query. This allows for a systematic approach to request data while leaving the front end in a loading state before receiving data from the API. The front end was styled using SASS, and uses CSS flex throughout the styling to give responsiveness and to make the styling process easier.",
+                        "link": "https://github.com/Rmiverson/goodbread"
                     },
                     {
                         "name": "Backend",
-                        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        "link": "https://github.com/Rmiverson"
+                        "about": "The back end for GoodBread was built using a Ruby on Rails REST API which uses a PostgreSQL database to store to. The api serializes data to JSON, and is set up to handle pagination for large data requests. The API also utilizes JWT to authenticate API requests from each user, and user data is encrypted using Bcrypt.",
+                        "link": "https://github.com/Rmiverson/goodbread-api"
                     }
                 ]
             }
