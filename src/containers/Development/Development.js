@@ -102,22 +102,6 @@ const Development = () => {
             </div>
           </div>
 
-          <div className="education">
-            <h2>Education</h2>
-            {result.data.development.education.map((item, index) => {
-              return (
-                <div key={item.name + index} className="education-item">
-                  <div className="education-item-header">
-                    <h3>{item.name}</h3>
-                    <p>{`${item.school} || ${item.year}`}</p>
-                  </div>
-
-                  <p>{item.description}</p>
-                </div>
-              )
-            })}
-          </div>
-
           <div className="development-projects">
             <h2>Projects</h2>
             {result.data.development.projects.map((project, index) => {

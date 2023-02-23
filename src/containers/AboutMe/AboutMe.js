@@ -68,7 +68,7 @@ const AboutMe = () => {
           <div className="main-body min-height">
             <section className="main-body-content">
               <Nav />
-              {result.data?.aboutMe?.map((value, index) => {
+              {result.data?.aboutMe?.introduction.map((value, index) => {
                 if (index === 0) {
                   return (
                     <div className="about-introduction" key={value}>
@@ -88,6 +88,22 @@ const AboutMe = () => {
                   )
                 };
               })}
+
+              <div className="education">
+                <h2>Education</h2>
+                {result.data?.aboutMe?.education.map((item, index) => {
+                  return (
+                    <div key={item.name + index} className="education-item">
+                      <div className="education-item-header">
+                        <h3>{item.name}</h3>
+                        <p>{`${item.school} || ${item.year}`}</p>
+                      </div>
+
+                      <p>{item.description}</p>
+                    </div>
+                  )
+                })}
+              </div>
 
               <SocialBar />
 

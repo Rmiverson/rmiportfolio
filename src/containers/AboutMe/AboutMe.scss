@@ -183,6 +183,22 @@ $landing-bg: "../../../public/media/bg2.JPG";
     }
   }
 
+  .education {
+    .education-item {
+      margin: 0rem 1.5rem 2.5rem 1.5rem;
+      
+      .education-item-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3, p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
   .download {
     display: flex;
     flex-direction: column;
