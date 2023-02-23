@@ -122,7 +122,7 @@ const Development = () => {
                     })}                  
                   </div>
 
-                  <img alt="Project Example" src={`/media/${project.media}`}/>
+                  <img alt="Project Example" src={`/media/dev/${project.media}`}/>
                 </div>
               )
             })}
