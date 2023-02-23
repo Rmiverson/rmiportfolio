@@ -17,4 +17,65 @@
       height: 50%;
     }
   }
+
+  .design-content {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .design-skills-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .design-skills-container, .design-software-container {
+        display: flex;
+        width: 100%;
+        margin: 0rem 0rem 0.5rem 0rem;
+
+        h3 {
+          width: 8rem;
+          display: flex;
+          flex-direction: row-reverse;
+          margin: 0px;
+        }
+
+        ul {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          
+          li {
+            display: inline;
+            padding: 0px 0em 0px 0.5em;
+          }
+        }
+      }
+    }
+
+    .design-projects {
+      .design-project {
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 1.5rem 5rem 1.5rem;
+
+        h3 {
+          margin: 0px;
+        }
+
+        img {
+          width: 70vw;
+          height: auto;
+          border-radius: 50px;
+          margin: 2.5rem auto 0px auto;
+        }
+      }
+    }
+  }
 }
