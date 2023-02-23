@@ -60,7 +60,7 @@ $landing-bg: "../../../public/media/bg2.JPG";
     .splash-content {
       display: flex;
       justify-content: space-between;
-      height: 95vh;
+      height: calc(100% - 60px);
 
       .landing-ribbon {
         background-color: #7A709D;
@@ -110,7 +110,7 @@ $landing-bg: "../../../public/media/bg2.JPG";
         display: flex;
         flex-direction: column;
         background-color: #75419D;
-        height: 5vh;
+        height: 60px;
         width: calc(100% - 120px);
 
         .inner-mid-ribbon {
