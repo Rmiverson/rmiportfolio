@@ -48,7 +48,18 @@
             }
         ]
     },
-    "design": [
-
-    ]
+    "design": {
+        "introduction": ["I began designing when I was taking courses at my local college. There I learned basic design fundamentals like color theory, composition, layout, and much more. I studied primarily in web design, however I also studied other areas like photography and art. After my education I’ve been growing my own personal style and improving my eye for good design. Currently I’m taking freelance work in graphic design and expanding my skills and experience to grow as a designer."],
+        "skills": {
+            "skills": ["Graphic Design", "Web Design", "Illustration", "Animation"],
+            "software": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Figma", "Blender", "Moho", "Clip Studio Paint", "Procreate", "Inkscape"]
+        },
+        "projects": [
+            {
+                "name": "",
+                "about": "",
+                "media": ""
+            }
+        ]
+    }
 }
