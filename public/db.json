@@ -56,9 +56,34 @@
         },
         "projects": [
             {
-                "name": "",
+                "name": "Poisoned Tee",
+                "about": "A graphic I designed for t-shirts and prints. Much of the inspiration for this design came from Pokemon and comic art. The process of making this piece gave me a lot of lessons in color, shape, and perspective.",
+                "media": "Poisoned Tee.png"
+            },
+            {
+                "name": "Sadgikarp",
                 "about": "",
-                "media": ""
+                "media": "Sadgikarp Print.png"
+            },
+            {
+                "name": "GoodBread Logo",
+                "about": "",
+                "media": "GoodBread Logo Old.png"
+            },
+            {
+                "name": "Jerry's Business Card",
+                "about": "",
+                "media": "Jerrys Business card.png"
+            },
+            {
+                "name": "Rmiportfolio Design",
+                "about": "",
+                "media": "rmiportfolio.png"
+            },
+            {
+                "name": "Dino",
+                "about": "",
+                "media": "DinoLines.png"
             }
         ]
     }
