@@ -72,17 +72,17 @@
             },
             {
                 "name": "Jerry's Business Card",
-                "about": "",
+                "about": "This was a commission by a client who needed some business cards for his boat detailing company. The design was prototyped using Adobe InDesign and then finalized after getting approval by the client. The client was very satisfied with the result, and gave me valuable experience working freelance.",
                 "media": "Jerrys Business card.png"
             },
             {
                 "name": "Rmiportfolio Design",
-                "about": "",
+                "about": "This is the prototype landing page for my portfolio design. I primarily used figma for this, and I focused on a simple and straightforward design to make for a modern look. The purpose for redesigning my portfolio was to make my work history stand out, as well as be an example of my skills as a developer and a web designer.",
                 "media": "rmiportfolio.png"
             },
             {
                 "name": "Dino",
-                "about": "",
+                "about": "This is currently a work in progress graphic for selling as stickers and other media on an online store. The graphic was sketched in procreate and is being finalized in clip studio paint. The purpose for this graphic is to be a start for growing my character design skills while also putting my work out there to the public.",
                 "media": "DinoLines.png"
             }
         ]
