@@ -56,12 +56,12 @@
         },
         "projects": [
             {
-                "name": "Poisoned Tee",
+                "name": "Poisoned Graphic",
                 "about": "A graphic I designed for t-shirts and prints. Much of the inspiration for this design came from Pokemon and comic art. The process of making this piece gave me a lot of lessons in color, shape, and perspective.",
                 "media": "Poisoned Tee.png"
             },
             {
-                "name": "Sadgikarp",
+                "name": "Sadgikarp Graphic",
                 "about": "A design I made for t-shirts and prints. Originally the graphic was an art piece from my graphic design classes in college. This is another graphic heavily inspired by Pokemon. The design  focuses on a motif of a ‘Magikarp’ unhappy with its position in life.",
                 "media": "Sadgikarp Print.png"
             },
@@ -81,7 +81,7 @@
                 "media": "rmiportfolio.png"
             },
             {
-                "name": "Dino",
+                "name": "Dino Graphic",
                 "about": "This is currently a work in progress graphic for selling as stickers and other media on an online store. The graphic was sketched in procreate and is being finalized in clip studio paint. The purpose for this graphic is to be a start for growing my character design skills while also putting my work out there to the public.",
                 "media": "DinoLines.png"
             }

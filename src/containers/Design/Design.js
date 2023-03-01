@@ -49,7 +49,7 @@ const Design = () => {
               <h3>Skills:</h3>
 
               <ul>
-                {result.data.design.skills.skills.map((skill, index) => {
+                {result.data?.design?.skills.skills.map((skill, index) => {
                   let returnValue = skill
 
                   if (index + 1 !== result.data.design.skills.skills.length) {
@@ -67,7 +67,7 @@ const Design = () => {
               <h3>Software:</h3>
 
               <ul>
-                {result.data.design.skills.software.map((software, index) => {
+                {result.data?.design?.skills.software.map((software, index) => {
                   let returnValue = software
 
                   if (index + 1 !== result.data.design.skills.software.length) {
@@ -83,11 +83,15 @@ const Design = () => {
           </div>
 
           <div className="design-projects">
-            <div className="design-project">
-              <h2>Project Name</h2>
-              <img alt="Design Example" />
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            </div>
+            {result.data?.design?.projects.map((project, index) => {
+              return (
+                <div key={project.name + index} className="design-project">
+                  <h2>{project.name}</h2>
+                  <p>{project.about}</p>
+                  <img alt="Project Example" src={`/media/design/${project.media}`} />
+                </div>
+              )
+            })}
           </div>
         </div>
 
