@@ -103,11 +103,10 @@ const Development = () => {
           </div>
 
           <div className="development-projects">
-            <h2>Projects</h2>
             {result.data.development.projects.map((project, index) => {
               return (
                 <div className="project" key={project.name + index}>
-                  <h3>{project.name}</h3>
+                  <h2>{project.name}</h2>
                   <p>{project.about}</p>
 
                   <div className="sub-sections">

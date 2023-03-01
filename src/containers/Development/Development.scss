@@ -68,9 +68,9 @@
     .project {
       display: flex;
       flex-direction: column;
-      margin: 0rem 1.5rem 5rem 1.5rem;
+      margin: 3rem 1.5rem 5rem 1.5rem;
 
-      h3 {
+      h2, h3, p {
         margin: 0px;
       }
 
@@ -88,7 +88,7 @@
         .sub-section {
           display: flex;
           flex-direction: column;
-          margin: 0px 15px 0px 15px;
+          margin: 1.5rem 15px 0px 15px;
           width: 50%;
 
           p {
