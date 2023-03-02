@@ -1,12 +1,13 @@
-import React from "react";
-import Nav from "../../components/Nav";
+import React from 'react'
+import Nav from '../../components/Nav'
+import './Photography.scss'
 
 const Photography = () => {
     return (
-        <div className="photography">
+        <div className='photography'>
             <Nav />
         </div>
-    );
-};
+    )
+}
 
-export default Photography;
+export default Photography
