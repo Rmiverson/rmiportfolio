@@ -3,11 +3,11 @@ import Nav from '../../components/Nav'
 import './Photography.scss'
 
 const Photography = () => {
-    return (
-        <div className='photography'>
-            <Nav />
-        </div>
-    )
+return (
+  <div className='photography'>
+    <Nav />
+  </div>
+  )
 }
 
 export default Photography
