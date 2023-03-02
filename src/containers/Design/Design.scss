@@ -78,8 +78,13 @@
         img {
           width: 30vw;
           height: auto;
-          border-radius: 50px;
+          border-radius: 10px;
           margin: 2.5rem auto auto auto;
+
+          box-shadow: -6px -6px 14px rgba(43, 43, 43, 0.7),
+          -6px -6px 10px rgba(43, 43, 43, 0.5),
+          6px 6px 8px rgba(43, 43, 43, 0.075),
+          6px 6px 10px rgba(43, 43, 43, 0.15);
         }
       }
     }
