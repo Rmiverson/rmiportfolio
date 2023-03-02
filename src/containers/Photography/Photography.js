@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import Footer from '../../components/Footer'
 import Nav from '../../components/Nav'
+import {AiOutlineClose} from 'react-icons/ai'
 
 import './Photography.scss'
 
 const Photography = () => {
   const [result, setResult] = useState({data: {}, status: null, message: null})
+  const [modal, setModal] = useState({display: 'hidden', media: null})
 
   useEffect(() => {
     async function getData() {
@@ -27,6 +29,18 @@ const Photography = () => {
   
     getData()
   }, [])
+
+  const handleClick = (e) => {
+    e.preventDefault()
+
+    if (modal.display === 'hidden') {
+      setModal({display: 'show', media: e.target.currentSrc})
+    }
+  }
+
+  const handleClose =() => {
+    setModal({display: 'hidden', media: null})
+  }
 
   if (!result.status) {
     return <div>Loading...</div>
@@ -81,9 +95,18 @@ const Photography = () => {
             </div>
           </div>
 
+          <div className={modal.display}>
+            <img alt='photography example' src={modal.media}/>
+            <button onClick={handleClose}>{<AiOutlineClose />}</button>
+          </div>
+
           <div className='photography-examples'>
             {result.data.photography.media.map((media, index) => {
-              return <img className='photography-example' alt='photography example' src={`/media/photography/${media}`}/>
+              return (
+                <div key={media + index} className='photography-example'>
+                  <img  alt='photography example' src={`/media/photography/${media}`} onClick={handleClick}/>
+                </div>
+              )
             })}
           </div>
 
