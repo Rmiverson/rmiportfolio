@@ -49,7 +49,7 @@
         ]
     },
     "design": {
-        "introduction": ["I began designing when I was taking courses at my local college. There I learned basic design fundamentals like color theory, composition, layout, and much more. I studied primarily in web design, however I also studied other areas like photography and art. After my education I’ve been growing my own personal style and improving my eye for good design. Currently I’m taking freelance work in graphic design and expanding my skills and experience to grow as a designer."],
+        "introduction": ["I began designing when I was taking courses at my local college. There I learned basic design fundamentals like color theory, composition, layout, and much more. I studied primarily in web design, however I also studied other areas like photography and art. After my education I’ve been growing my own personal style and improving my skills to develop better designs. Currently I’m taking freelance work in graphic design and expanding my skills and experience to grow as a designer."],
         "skills": {
             "skills": ["Graphic Design", "Web Design", "Illustration", "Animation"],
             "software": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Figma", "Blender", "Moho", "Clip Studio Paint", "Procreate", "Inkscape"]
@@ -86,5 +86,11 @@
                 "media": "DinoLines.png"
             }
         ]
+    },
+    "photography": {
+        "about": "I started photography in my time at college, taking a course that taught the basics of taking professional and creative photos. I quickly fell in love with photography because it challenged me to think creatively while also being aware of the technical aspects of the camera. I’ve worked as an official photographer for conference events, as well as a photo retoucher for a family run photo studio. Right now I’m taking photos as a hobby, growing my skills and training my eyes to become a better photographer. ",
+        "skills": ["Landscape Photography", "Portrait Photography", "Night Photography", "Event Photography", "Photo Retouching"],
+        "software": ["Adobe Photoshop", "Adobe Lightroom", "Skylum Luminar", "Photolynx"],
+        "media": ["ph-1.jpg", "ph-2.jpg", "ph-3.jpg", "ph-4.jpg", "ph-5.jpg", "ph-6.jpg", "ph-7.jpg", "ph-8.jpg", "ph-9.jpg", "ph-10.jpg"]
     }
 }
