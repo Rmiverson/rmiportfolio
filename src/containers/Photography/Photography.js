@@ -45,8 +45,8 @@ const Photography = () => {
             <p>{result.data.photography.about}</p>
           </div>
 
-          <div className='skills-list'>
-            <div className='skills-container'>
+          <div className='photography-skills-list'>
+            <div className='photography-skills-container'>
               <h3>Skills:</h3>
               <ul>
                 {result.data.photography.skills.map((skill, index) => {
@@ -63,7 +63,7 @@ const Photography = () => {
               </ul>
             </div>
 
-            <div className='software-container'>
+            <div className='photography-software-container'>
               <h3>Software:</h3>
               <ul>
                 {result.data.photography.software.map((software, index) => {
@@ -81,9 +81,9 @@ const Photography = () => {
             </div>
           </div>
 
-          <div className='photography examples'>
+          <div className='photography-examples'>
             {result.data.photography.media.map((media, index) => {
-              return <img alt='photography example' src={`/media/photography/${media}`}/>
+              return <img className='photography-example' alt='photography example' src={`/media/photography/${media}`}/>
             })}
           </div>
 

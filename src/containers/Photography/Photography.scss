@@ -1,0 +1,77 @@
+.photography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  
+  .mid-ribbon {
+    display: flex;
+    flex-direction: column;
+    background-color: #75419D;
+    height: 5vh;
+    width: 100%;
+    box-shadow: 10px 14px 20px -6px rgba(59, 59, 59, .9), -10px -14px 20px -6px rgba(0, 0, 0, 0.25);
+
+    .inner-mid-ribbon {
+      background-color: #7A709D;
+      height: 50%;
+    }
+  }
+
+  .photography-content {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .photography-skills-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .photography-skills-container, .photography-software-container {
+        display: flex;
+        width: 100%;
+        margin: 0rem 0rem 0.5rem 0rem;
+
+        h3 {
+          width: 8rem;
+          display: flex;
+          flex-direction: row-reverse;
+          margin: 0px;
+        }
+
+        ul {
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          
+          li {
+            display: inline;
+            padding: 0px 0em 0px 0.5em;
+          }
+        }
+      }
+    }
+
+    .photography-examples {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+      grid-auto-rows: minmax(100px, auto);
+      margin-top: 3rem;
+
+      img {
+        width: 40vw;
+        height: auto;
+        border-radius: 10px;
+        margin: auto;
+      }      
+    }
+  }
+}
