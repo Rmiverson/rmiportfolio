@@ -92,5 +92,8 @@
         "skills": ["Landscape Photography", "Portrait Photography", "Night Photography", "Event Photography", "Photo Retouching"],
         "software": ["Adobe Photoshop", "Adobe Lightroom", "Skylum Luminar", "Photolynx"],
         "media": ["ph-1.jpg", "ph-2.jpg", "ph-3.jpg", "ph-4.jpg", "ph-5.jpg", "ph-6.jpg", "ph-7.jpg", "ph-8.jpg", "ph-9.jpg", "ph-10.jpg"]
+    },
+    "contact": {
+        "about": "If you’re interested in seeing more of my work or if you’re interested in hiring me, please feel free to reach out. I’m currently looking for software development and design work, as well as commissions. You can reach me on any one of my social media profiles, or through my email. "
     }
 }
