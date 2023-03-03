@@ -83,9 +83,7 @@ const AboutMe = () => {
                     </div>
                   )
                 } else {
-                  return (
-                    <p key={value}>{value}</p>
-                  )
+                  return <p key={value}>{value}</p>
                 }
               })}
 

@@ -35,7 +35,6 @@ const Contact = () => {
     let email = 'rmiverson99@gmail.com'
 
     navigator.clipboard.writeText(email)
-
     setCopyState(<HiOutlineCheck />)
 
     setTimeout(() => {
@@ -63,7 +62,6 @@ const Contact = () => {
             <a href='mailto:rmiverson99@gmail.com'>rmiverson99@gmail.com</a>
             <button onClick={copyEmail}>{copyState}</button>
           </div>
-          
 
           <SocialBar />
         </div>

@@ -43,9 +43,7 @@ const Development = () => {
           <div className='development-introduction'>
             <h1>Software Development</h1>
             {result.data.development.about.map((paragraph, index) => {
-              return (
-                <p key={paragraph + index}>{paragraph}</p>
-              )
+              return <p key={paragraph + index}>{paragraph}</p>
             })} 
           </div>
 
@@ -60,9 +58,7 @@ const Development = () => {
                     returnValue = `${skill},`
                   }
 
-                  return (
-                    <li key={skill + index}>{returnValue}</li>
-                  )
+                  return <li key={skill + index}>{returnValue}</li>
                 })}                
               </ul>
             </div>
@@ -77,9 +73,7 @@ const Development = () => {
                     returnValue = `${language},`
                   }
 
-                  return (
-                    <li key={language + index}>{returnValue}</li>
-                  )
+                  return <li key={language + index}>{returnValue}</li>
                 })}                
               </ul>
             </div>
@@ -94,9 +88,7 @@ const Development = () => {
                     returnValue = `${tool},`
                   }
 
-                  return (
-                    <li key={tool + index}>{returnValue}</li>
-                  )
+                  return <li key={tool + index}>{returnValue}</li>
                 })}                
               </ul>
             </div>

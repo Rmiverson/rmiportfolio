@@ -56,9 +56,7 @@ const Design = () => {
                     returnValue = `${skill},`
                   }
 
-                  return (
-                    <li key={skill + index}>{returnValue}</li>
-                  )
+                  return <li key={skill + index}>{returnValue}</li>
                 })}
               </ul>
             </div>
@@ -74,9 +72,7 @@ const Design = () => {
                     returnValue = `${software},`
                   }
 
-                  return (
-                    <li key={software + index}>{returnValue}</li>
-                  )
+                  return <li key={software + index}>{returnValue}</li>
                 })}
               </ul>
             </div>
