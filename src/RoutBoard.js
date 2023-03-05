@@ -11,10 +11,10 @@ const RouteBoard = (props) => {
     return (
         <Routes>
             <Route index element={<AboutMe data={props.result} />} />
-            <Route path='/development' element={<Development />} />
-            <Route path='/design' element={<Design />} />
-            <Route path='/photography' element={<Photography />} />
-            <Route path='/Contact' element={<Contact />} />
+            <Route path='/development' element={<Development data={props.result} />} />
+            <Route path='/design' element={<Design data={props.result} />} />
+            <Route path='/photography' element={<Photography data={props.result} />} />
+            <Route path='/Contact' element={<Contact data={props.result} />} />
 
             <Route path='*' element={<div>404 Page Not Found.</div>} />
         </Routes>
