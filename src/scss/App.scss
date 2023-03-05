@@ -1,9 +1,8 @@
 $landing-bg: "../../public/media/bg2.JPG";
 
-// .App, #root {
-//   display: flex;
-//   flex-direction: column;
-// }
+.about-me, .development, .design, .photography, .contact {
+  min-height: 100vh;
+}
 
 .min-height {
   min-height: 120vh;
