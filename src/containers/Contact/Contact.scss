@@ -21,6 +21,7 @@
       font-size: small;
       color: white;
       font-size: medium;
+      border-bottom: solid #7A709D;
     
       &:visited {
         color: white;
@@ -34,6 +35,7 @@
                 6px 6px 10px rgba(255, 255, 255, 0.15);
   
       &:hover {
+        border-bottom: solid #4d4d4d;
         box-shadow: -2px -2px 6px rgba(43, 43, 43, 0.6),
                     -2px -2px 4px rgba(43, 43, 43, 0.4),
                     2px 2px 2px rgba(43, 43, 43, 0.05),
