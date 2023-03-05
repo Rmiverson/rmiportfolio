@@ -73,7 +73,7 @@ const Development = (props) => {
                     <div key={subSection.name + index} className='sub-section'>
                       <h3>{subSection.name}</h3>
                       <p>{subSection.about}</p>
-                      <a href={subSection.link}><BsGithub /></a>
+                      <a href={subSection.link} target="_blank" rel="noreferrer noopener"><BsGithub /></a>
                     </div>
                   )
                 })}                  
