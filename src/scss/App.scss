@@ -277,7 +277,9 @@ p {
 
   img {
     border-radius: 10px;
-    max-height: 90vh;
+    width: 80vw;
+    height: auto;
+    margin-top: 5vh;
   }
 
   button {
@@ -296,6 +298,7 @@ p {
     border: none;
     border-bottom: solid #7A709D;
     border-radius: 15px;
+    margin-bottom: 5vh;
 
     svg {
       height: 40px;
