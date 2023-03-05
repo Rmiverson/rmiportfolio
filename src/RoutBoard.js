@@ -7,10 +7,10 @@ import Design from './containers/Design/Design.js'
 import Development from './containers/Development/Development.js'
 import Photography from './containers/Photography/Photography.js'
 
-const RouteBoard = () => {
+const RouteBoard = (props) => {
     return (
         <Routes>
-            <Route index element={<AboutMe />} />
+            <Route index element={<AboutMe data={props.result} />} />
             <Route path='/development' element={<Development />} />
             <Route path='/design' element={<Design />} />
             <Route path='/photography' element={<Photography />} />
