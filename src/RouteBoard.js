@@ -16,7 +16,7 @@ const RouteBoard = (props) => {
             <Route path='/photography' element={<Photography data={props.result} />} />
             <Route path='/Contact' element={<Contact data={props.result} />} />
 
-            <Route path='*' element={<div>404 Page Not Found.</div>} />
+            <Route path='*' element={<div className='404'><h1>404 Page Not Found.</h1></div>} />
         </Routes>
     )
 }
