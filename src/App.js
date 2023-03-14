@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './scss/App.scss'
-import RouteBoard from './RoutBoard'
+import RouteBoard from './RouteBoard'
 import Nav from './components/Nav'
 import Splash from './components/Splash'
 import Footer from './components/Footer'
