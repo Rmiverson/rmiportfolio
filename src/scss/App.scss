@@ -374,6 +374,47 @@ p {
 }
 
 @media only screen and (max-width: 560px) {
+
+  .main-body {
+    width: 100%;
+  }
+
+  .lower-content {
+    .main-body {
+      width: 100%;
+    }
+
+    .body-ribbon {
+      display: none;
+    }
+  }
+
+  .landing {
+    .splash-content {
+      display: flex;
+      justify-content: center;
+
+      .landing-ribbon {
+        display: none;
+      }
+      
+      .splash {
+        width: 80vw;
+        height: 40vh;
+        margin: 2rem 0px 0px 0px;
+      }
+    }
+
+    .mid-ribbon-container {
+      .mid-ribbon-corner-l, .mid-ribbon-corner-r {
+        display: none;
+      }
+      .mid-ribbon {
+        width: 100%;
+      }
+    }
+  }
+
   .nav {
     flex-direction: column;
     padding-bottom: 1rem;
