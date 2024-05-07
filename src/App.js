@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './scss/App.scss'
+import './scss/loading.scss'
 import RouteBoard from './RouteBoard'
 import Nav from './components/Nav'
 import Splash from './components/Splash'
@@ -30,7 +31,7 @@ const App = () => {
   }, [])
 
   if (!result.status) {
-    return <span>Loading...</span>
+    return <div className='loading'>Loading...</div>
   } else {
     return (
       <div className='App'>
@@ -56,7 +57,6 @@ const App = () => {
             </div>           
           </div>
         </div>
-
         <div className='lower-content'>
           <div className='body-ribbon'>
             <div className='inner-body-ribbon'></div>
