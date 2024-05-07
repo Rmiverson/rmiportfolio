@@ -2,6 +2,8 @@ $landing-bg: "../../public/media/bg2.jpeg";
 
 .about-me, .development, .design, .photography, .contact {
   min-height: 100vh;
+  max-width: 75rem;
+  margin: auto;
 }
 
 .min-height {
@@ -10,6 +12,14 @@ $landing-bg: "../../public/media/bg2.jpeg";
 
 p {
   text-align: left;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
 }
 
 .splash {
@@ -276,9 +286,10 @@ p {
 
   img {
     border-radius: 10px;
-    width: 80vw;
-    height: auto;
-    margin-top: 5vh;
+    width: auto;
+    height: 65%;
+    margin: auto;
+    overflow: hidden;
   }
 
   button {
