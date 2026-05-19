@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import SideNav from '@/app/ui/dashboard/SideNav';
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +29,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-        <div className="w-full flex-none md:w-64">
-          <SideNav />
-        </div>
-        <div className="grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+        <nav className="w-full flex-none md:w-64">
+          <li><Link href="/">Work</Link></li>
+          <li><Link href="/Contact">Contact</Link></li>
+          <li><Link href="/Me">Me</Link></li>
+        </nav>
+        <main className="grow p-6 md:overflow-y-auto md:p-12">{children}</main>
       </body>
     </html>
   );
