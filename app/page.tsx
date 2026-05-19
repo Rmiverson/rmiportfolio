@@ -12,7 +12,7 @@ export default function Work() {
                     {/* Grid system for illustrations */}
                     <div className="flex flex-row gap-4">
                         {/* Grid item for each illustration */}
-                        <image className="w-40 h-40 bg-olive-500"/>
+                        <img className="w-40 h-40 bg-olive-500"></img>
                         <div> {/* hidden until image is clicked on */}
                             <h3>Title</h3>
                             <p>Summary</p>

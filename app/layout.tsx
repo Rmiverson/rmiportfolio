@@ -28,12 +28,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-        <nav className="w-full flex-none md:w-64">
-          <li><Link href="/">Work</Link></li>
-          <li><Link href="/Contact">Contact</Link></li>
-          <li><Link href="/Me">Me</Link></li>
-        </nav>
+      <body className="flex flex-col h-full">
+        <div className="flex flex-row w-full p-4 bg-olive-200 text-black">
+          <nav className="flex flex-auto flex-row gap-4">
+            <div><Link href="/">Work</Link></div>
+            <div><Link href="/Contact">Contact</Link></div>
+            <div><Link href="/Me">Me</Link></div>
+          </nav>
+          <div className="flex-none">Riley M. Iverson</div>
+        </div>
         <main className="grow p-6 md:overflow-y-auto md:p-12">{children}</main>
       </body>
     </html>
