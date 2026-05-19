@@ -37,7 +37,7 @@ export default function RootLayout({
           </nav>
           <div className="flex-none">Riley M. Iverson</div>
         </div>
-        <main className="grow p-6 md:overflow-y-auto md:p-12">{children}</main>
+        <main className="grow md:overflow-y-auto">{children}</main>
       </body>
     </html>
   );
